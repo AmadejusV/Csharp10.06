@@ -1,0 +1,15 @@
+﻿@model List<Person>
+
+
+@*pranesa apie modelio tipa, kad butu galima naudot Person model (classe, jos properties)*@
+
+
+    <ul>
+        @foreach (Person item in Model)
+        {
+            <li>@item.Vardas @item.Pavarde</li>
+        }
+    </ul>
+
+
+<H1>Kitos info headeris</H1>
